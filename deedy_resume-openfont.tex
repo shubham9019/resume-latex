@@ -1,0 +1,207 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Shubham}{Sharma}{ \urlstyle{same} +91 8860315605 | \href{mailto:shubham9019@gmail.com}{shubham9019@gmail.com} | Gurgaon, Haryana
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{Chandigarh University}
+\descript{B.E Computer Science and Engineering}
+\location{2017 - 2021 | Mohali, Punjab}
+\sectionsep
+
+
+\subsection{Delhi Public School, MK}
+\location{2017 | Gurgaon, Haryana}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+
+Github:// \href{https://github.com/shubham9019}{\bf shubham9019} \\
+LinkedIn://  \href{https://www.linkedin.com/in/shubham9019}{\bf shubham9019} \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+
+.NET \textbullet{}   C\# \textbullet{} SQL Server \textbullet{} React  \textbullet{}\\ JavaScript \textbullet{} Entity Framework \textbullet{} Git \textbullet{} Azure
+\textbullet{} Docker \textbullet{} CosmosDB \textbullet{} Kubernetes \textbullet{} Specflow \textbullet{}  WPF \textbullet{} \\WCF \textbullet{} Redis \textbullet{} AWS \textbullet{} Microservices \textbullet{} MongoDB \textbullet{} ActiveBatch
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+\runsubsection{Publicis Sapient}
+\descript{| Associate Technology L1 }
+\location{July 2022 - Present | Gurgaon, Haryana}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Worked on .NET Core Microservices along with WPF, WCF applications.
+\item Improved the workflow of a major WPF application to save users from several hours of repetitive work.
+\item Improved performance, identified and resolved bottlenecks and deadlock issues in serveral services.
+\item Hand-on experience with Azure Event hub, Cosmos DB, Azure SQL server, Azure Redis.
+as part of application re-write.
+\item Developed test automation framework using Specflow for product testing.
+\item Domain - Hedge Fund
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Publicis Sapient}
+\descript{| Junior Associate Technology }
+\location{Dec 2021 – June 2022 | Gurgaon, Haryana}
+\begin{tightemize}
+\item Worked on .NET Core Web API, Angular 10, CosmosDB and SQL Server.
+\item Worked on creating, automating, executing Test Scenarios along with defect logging and triaging.
+\item Worked closely with DEVOPS, QA and BA teams to ensure smooth and timely delivery.
+\item Domain - Regulatory Reporting
+\end{tightemize}
+\sectionsep
+
+
+
+\runsubsection{Nagarro}
+\descript{| Associate Engineer}
+\location{July 2021 – Dec 2021 | Gurgaon, Haryana}
+\begin{tightemize}
+\item Worked on an E-Commerce project using technologies like .NET Framework, Angular 6, Redis and SQL Server.
+\item Resolved multiple UI related issues and optimized the product search feature for 40\% improvement.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Nagarro}
+\descript{| Trainee}
+\location{Jan 2021 – June 2021 | Gurgaon, Haryana}
+\begin{tightemize}
+\item Got trained on .NET Core, C\# and other related Microsoft technologies like SQL Server, Azure Devops.
+\item Also, learned JWT authentication, serialization, Messaging Queues, Event Hub and built a project around it for learning.
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Projects
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+\runsubsection{T-Shirt Store}
+\descript{| MERN}
+Ecommerce website built using MERN(Mongo, Express.js, react.js, node.js) Stack. Authentication, admin panel and
+PayPal integration are also implemented in this build.  
+\sectionsep
+
+\runsubsection{NCR Book Events}
+\descript{| .NET Core \& SQL Server}
+A web application build using .NET Core, Bootstrap, Javascript and SQL. It can share information about the events, send
+private invites to individuals and an admin portal for management of all the event data
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Certificates
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Certificates} 
+\begin{tabular}{ll}
+AZ-900: Microsoft Azure Fundamentals	     & 04/2022\\
+Coding Ninjas : Data Structures in JAVA	     & 07/2020\\
+A2IT PVT. LTD : Python Programming                        & 06/2019\\
+\end{tabular}
+\sectionsep
+
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
